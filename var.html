@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트2.변수</title>
+</head>
+<body>
+    <script>
+        // 변수명 중복 불가(생성 시)
+        // 변수는 한번에 한가지 값만 담기가능
+        // 변수 선언 키워드 var, let, const
+        // var == valilaJS 오래된 변수 선언 키워드 
+        // let, const == ES5 2015년 이후 변수키워드
+        //var 변수 중복에러를 체크 하지 못한다.
+        //let 변수 중복에러를 체크 할 수 있다. (변수 생성시에만 들어감)
+        let a = 1;
+        console.log(a) // 1
+        let b = 2;
+        console.log(b) // 2
+
+        let c = 10;
+        console.log(c) // 10
+        c = 11; //기존 c의 값을 다른 대입값으로 바꾼다
+        console.log(c); // 11
+
+        let year = 2023;
+        console.log(year+'년도') //2023년도
+        year = 2024
+        console.log(year+'년도') //2024년도
+    </script>
+</body>
+</html>
