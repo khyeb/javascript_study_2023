@@ -30,10 +30,10 @@ console.log('--------------------------------')
 // 복합대입전산자를 이용한 태그 생성방법
 let cart_li='<ul>';//빈 장바구니 (초기)
 // 참기름 1개 장바구니 담기
-cart_li+='<li>참기름1개</li>';
+cart_li +='<li>참기름1개</li>';
 // 베이글 2개 장바구니 담기
-cart_li+='<li>베이글2개</li>'
-cart_li+='</ul>'
+cart_li +='<li>베이글2개</li>'
+cart_li +='</ul>'
 console.log(cart_li);
 console.log('--------------------------------')
 // 태그 생성 메서드 createElement('생성태그명')
