@@ -43,5 +43,32 @@
             </fieldset>
         </form>
     </div>
+    <script>
+        /*
+            1.아이디 안 적고 비밀번호 적은 후 로그인 클릭시 = 아이디오류
+            2.아이디 적고 비밀번호 안 적고 로그인 버튼 클릭시 = 비밀번호 오류
+            3.아이디, 비밀번호 모두 안적고 로그인 버튼 클릭시 = 아이디, 비밀번호 입력하세요 메시지
+            4.아이디, 비밀번호 모두 입력하고 로그인 버튼 클릭시 = 로그인 성공
+        */
+
+
+        const userId = document.querySelector('#user_id')
+        const userPw = document.querySelector('#user_pw')
+        const result = document.querySelector('#error_result')
+        const loginBtn = document.querySelector('#login_btn')
+        console.log(userId,userPw,result,loginBtn)
+        loginBtn.addEventListener('click',function(){
+            if(userId.value === '' && userPw.value===''){
+                result.innerHTML = '아이디, 비밀번호를 입력하세요'
+            }else if(userId.value === ''){
+                result.innerHTML = '아이디를 입력하세요'
+            }else if(userPw.value === ''){
+                result.innerHTML = '비밀번호를 입력하세요'
+            }else{
+                window.alert('로그인 성공')
+            }
+        })
+
+    </script>
 </body>
 </html>
