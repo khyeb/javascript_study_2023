@@ -40,7 +40,8 @@ main #video .tab_title a {
     padding:20px 0px;
     background-color: aqua;
 }
-main #video .tab_title .active {
+/* 탭 제목 활성화 디자인 +js class호출용 */
+main #video .tab_title a.active {
     border-bottom:5px solid #189bfa;
 }
 main #video .tab_contents {}
@@ -73,7 +74,8 @@ main #menu .tab_title a {
 main #menu .tab_title a:last-child {
     margin-right:0;
 }
-main #menu .tab_title .active {
+/* 탭 제목 활성화 디자인 +js class호출용 */
+main #menu .tab_title a.active {
     border:1px solid #3c3c3c;
     border-top:5px solid #189bfa;
     border-bottom:1px solid #fff;
@@ -84,7 +86,7 @@ main #menu .tab_contents {
 main #menu .tab_contents .tab_c1 {
     background:darkorange;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
-    margin-top:40px;
+    margin:40px 0 100px 0;
 }
 main #menu .tab_contents .tab_c1 .left {}
 main #menu .tab_contents .tab_c1 .left h2 {
